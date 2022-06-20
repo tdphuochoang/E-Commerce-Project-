@@ -31,16 +31,16 @@
             <li class="nav-item active">
               <a class="nav-link" href="../home/home.html">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="cart-btn">
               <a class="nav-link" href="../cart/cart.html">Cart</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="order-btn">
               <a class="nav-link" href="../order/order.html">My Orders</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="register-btn-">
               <a class="nav-link" href="../register/register.html">Sign Up</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="login-btn">
               <a class="nav-link" href="../login/login.html">Log In</a>
             </li>
           </ul>
@@ -427,29 +427,5 @@
   <!--glider.js-->
   <script src="../Glider.js-master/glider.min.js"></script>
   <!--script-->
-  <script>
-    let sliders = document.querySelectorAll(".glider");
-    for (let i = 0; i < sliders.length; i++) {
-      let glider = new Glider(sliders[i], {
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        draggable: true,
-        dots: ".dots",
-        arrows: {
-          prev: `.glider-prev${i}`,
-          next: `.glider-next${i}`,
-        },
-      });
-    }
-    // new Glider(document.querySelector(".glider"), {
-    //   slidesToShow: 4,
-    //   slidesToScroll: 1,
-    //   draggable: true,
-    //   dots: ".dots",
-    //   arrows: {
-    //     prev: ".glider-prev",
-    //     next: ".glider-next",
-    //   },
-    // });
-  </script>
+  <script src="home.js"></script>
 </html>

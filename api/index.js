@@ -8,6 +8,7 @@ const productRoute = require("./routes/product.js");
 const cartRoute = require("./routes/cart.js");
 const orderRoute = require("./routes/order.js");
 const path = require("path");
+const cookieParser = require("cookie-parser");
 
 dotenv.config();
 
@@ -23,6 +24,7 @@ app.get("/api/test", () => {
 });
 
 //Middlewares
+app.use(cookieParser());
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);

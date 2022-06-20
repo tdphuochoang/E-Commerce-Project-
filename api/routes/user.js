@@ -4,8 +4,13 @@ const {
 } = require("./verifyToken");
 const bcrypt = require("bcrypt");
 const User = require("../models/User.js");
+const { route } = require("./auth");
+const cookieParser = require("cookie-parser");
 
 const router = require("express").Router();
+
+//Check if a user is logged in successfully
+// route.get("/authenticate", async (req, res) => {});
 
 //Update user
 router.put("/:id", verifyTokenAndAuthorization, async (req, res) => {

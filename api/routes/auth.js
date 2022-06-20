@@ -2,6 +2,7 @@ const router = require("express").Router();
 const User = require("../models/User.js");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const cookieParser = require("cookie-parser");
 
 //REGISTER
 router.post("/register", async (req, res) => {
@@ -46,6 +47,7 @@ router.post("/login", async (req, res) => {
     const access_token = jwt.sign(
       {
         id: user._id,
+        username: user.username,
         isAdmin: user.isAdmin,
       },
       process.env.JWT_KEY,
@@ -54,15 +56,29 @@ router.post("/login", async (req, res) => {
 
     const { password, ...others } = user._doc;
 
-    res.status(200).json({
-      ...others,
-      status: 200,
-      message: "Successfully Logged In",
-      access_token,
-    });
+    res
+      .cookie("access_token", access_token, {
+        httpOnly: true,
+      })
+      .status(200)
+      .json({
+        ...others,
+        status: 200,
+        message: "Successfully Logged In",
+        access_token,
+      });
   } catch (err) {
     res.status(500).json(err);
   }
+});
+
+//LOGOUT
+router.get("/logout", (req, res) => {
+  //delete cookie
+  res.cookie("access_token", "", { maxAge: 1 });
+  res
+    .status(200)
+    .json({ status: 200, message: "You're successfully logged out" });
 });
 
 module.exports = router;
