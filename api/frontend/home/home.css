@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;500;600&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*Start nav*/
+nav {
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.nav-container {
+  height: 60px;
+  background: #2d2d2d;
+}
+
+.nav-wrapper {
+  padding: 0px 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  padding-left: 50px;
+  align-items: center;
+  color: white;
+  height: 100%;
+}
+
+.logo {
+  font-family: "Dosis", sans-serif;
+  font-size: 40px;
+  text-shadow: 2px 2px rgb(53, 50, 50);
+  margin-right: 50px;
+}
+
+.center {
+  flex: 3;
+}
+
+.right {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.nav-item {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.nav-item .nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background: grey;
+  font-size: 19px;
+}
+
+/* End nav */
+
+/*Start banner*/
+.banner-container {
+  width: 100%;
+  height: 100vh;
+  background: #f5fafd;
+  overflow: hidden;
+  padding: 50px 100px;
+}
+
+.banner-wrapper {
+  height: 100%;
+  display: flex;
+  background: #f5f5f3;
+}
+
+.img-container {
+  flex: 1;
+}
+
+.img-container > img {
+  height: 100%;
+  width: 80%;
+}
+
+.info-container {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.info-container .info-title {
+  font-size: 50px;
+}
+
+.info-container .info-desc {
+  margin: 30px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.info-container button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/*End banner */
+/* Start slider */
+.p-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: 95%;
+}
+
+.product-slider-heading {
+  font: 28px;
+  text-transform: uppercase;
+  color: #313131;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  margin: 0px 2px;
+}
+
+.p-img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.p-img a,
+.p-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.p-img a img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: contain;
+}
+
+.p-box-text {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.product-desc {
+  color: #333333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+.product-desc:hover {
+  color: #111111;
+  opacity: 0.7;
+  transition: all ease 0.3s;
+}
+
+.price-buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.price-buy .p-price {
+  font-size: 1.3rem;
+  color: #333333;
+  font-weight: 700;
+}
+
+.slider-btns {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 30px auto 10px auto;
+  padding: 0px 10px;
+}
+
+.slider-btns button {
+  position: static !important;
+  transform: translate(0, 0);
+  background-color: #f3f3f3;
+  width: 80px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  font-size: 25px;
+}
+
+/*Footer*/
+.footer-container {
+  display: flex;
+}
+
+.footer-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.footer-left p {
+  margin: 20px 0px;
+}
+
+.social-container {
+  display: flex;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.footer-center {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-center ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-center ul li {
+  width: 50%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-center h3,
+.footer-right h3 {
+  margin-bottom: 30px;
+}
+
+.footer-right .contact-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+/*End footer*/

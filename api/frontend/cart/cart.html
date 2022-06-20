@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="cart-container">
+      <!--Navbar-->
+      <nav>
+        <div class="nav-container">
+          <div class="nav-wrapper">
+            <div class="left">
+              <h1 class="logo">TOBI</h1>
+            </div>
+            <div class="center"></div>
+            <ul class="right">
+              <li class="nav-item">
+                <a class="nav-link" href="../home/home.html">Home</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="../cart/cart.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../order/order.html">My Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../register/register.html">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../login/login.html">Log In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--End nav-->
+      <!--Start cart-->
+      <div class="cart-wrapper">
+        <h1>YOUR BAG</h1>
+        <div class="cart-top">
+          <button><a href="../home/home.html">CONTINUE SHOPPING</a></button>
+          <div class="toptexts">
+            <span>Shopping Bag(2)</span>
+            <span>Your WishList(0)</span>
+          </div>
+          <button><a href="../order/order.html">CHECK OUT NOW</a></button>
+        </div>
+        <div class="cart-bottom">
+          <div class="cart-info">
+            <div class="cart-product">
+              <div class="product-detail">
+                <img
+                  src="https://images.asos-media.com/products/nike-statement-have-a-nike-day-oversized-back-graphic-print-t-shirt-in-cream/201313313-1-cream?$n_480w$&wid=476&fit=constrain"
+                  alt="Image"
+                />
+                <div class="details">
+                  <span class="product-name"
+                    ><strong>Product: </strong>Nike Statement Have A Nike Day
+                    oversized back graphic print T-shirt in cream</span
+                  >
+                  <span class="product-id"><strong>ID: </strong>12345678</span>
+                  <span class="product-size"><strong>Size: </strong>M</span>
+                </div>
+              </div>
+              <div class="price-detail">
+                <div class="product-amount-container">
+                  <i class="fa-solid fa-minus"></i>
+                  <span class="product-amount">1</span>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <span class="product-price">$100</span>
+              </div>
+            </div>
+            <hr />
+            <div class="cart-product">
+              <div class="product-detail">
+                <img
+                  src="https://images.asos-media.com/products/adidas-originals-united-t-shirt-in-black-with-globe-graphics/202288762-1-black?$n_480w$&wid=476&fit=constrain"
+                  alt="Image"
+                />
+                <div class="details">
+                  <span class="product-name"
+                    ><strong>Product: </strong>adidas Originals United T-shirt
+                    in black with globe graphics</span
+                  >
+                  <span class="product-id"><strong>ID: </strong>87654321</span>
+                  <span class="product-size"><strong>Size: </strong>M</span>
+                </div>
+              </div>
+              <div class="price-detail">
+                <div class="product-amount-container">
+                  <i class="fa-solid fa-minus"></i>
+                  <span class="product-amount">2</span>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                <span class="product-price">$80</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End cart-->
+      <!--Start footer-->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <h1 class="logo">TOBI</h1>
+            <p>
+              Our products are the best in the world. Check them out and tell us
+              your opinions.
+            </p>
+            <div class="social-container">
+              <div class="social-icon" style="background-color: #3b5999">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="social-icon" style="background-color: #e4405f">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="social-icon" style="background-color: #55acee">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="social-icon" style="background-color: #e60023">
+                <i class="fa-brands fa-pinterest"></i>
+              </div>
+            </div>
+          </div>
+          <div class="footer-center">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Home</li>
+              <li>Cart</li>
+              <li>Accessories</li>
+              <li>My Account</li>
+              <li>Order Tracking</li>
+              <li>Wishlist</li>
+              <li>Terms</li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <h3>Contact</h3>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-pin" style="margin-right: 10px"></i
+              >1234 56th St, Seattle, WA, 98101
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone" style="margin-right: 10px"></i
+              >999-999-9999
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope" style="margin-right: 10px"></i
+              >tobi@business.com
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!--End footer-->
+    </div>
+  </body>
+</html>
